@@ -6,7 +6,7 @@
 /*   By: balberga <balberga@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/17 17:59:13 by balberga          #+#    #+#             */
-/*   Updated: 2024/03/17 17:59:16 by balberga         ###   ########.fr       */
+/*   Updated: 2024/03/17 19:29:38 by balberga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,16 +14,16 @@
 
 void	ft_striteri(char *s, void (*f) (unsigned int, char *))
 {
-	unsigned int	i;
-	size_t			len;
+	unsigned int	a;
+	size_t			l;
 
 	if (!s || !f)
 		return ;
-	i = 0;
-	len = ft_strlen(s);
-	while (i < len)
+	a = 0;
+	l = ft_strlen(s);
+	while (a < l)
 	{
-		f(i, &s[i]);
-		i++;
+		f(a, &s[a]);
+		a++;
 	}
 }

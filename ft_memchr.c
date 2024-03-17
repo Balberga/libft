@@ -6,7 +6,7 @@
 /*   By: balberga <balberga@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/16 19:15:17 by balberga          #+#    #+#             */
-/*   Updated: 2024/03/16 19:15:43 by balberga         ###   ########.fr       */
+/*   Updated: 2024/03/17 19:12:36 by balberga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,14 +14,14 @@
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {
-	unsigned char	*p;
+	unsigned char	*ptr;
 
-	p = (unsigned char *)s;
+	ptr = (unsigned char *)s;
 	while (n > 0)
 	{
-		if (*p == (unsigned char)c)
-			return (p);
-		p++;
+		if (*ptr == (unsigned char)c)
+			return (ptr);
+		ptr++;
 		n--;
 	}
 	return (0);

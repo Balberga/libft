@@ -6,7 +6,7 @@
 /*   By: balberga <balberga@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/17 17:58:18 by balberga          #+#    #+#             */
-/*   Updated: 2024/03/17 17:58:20 by balberga         ###   ########.fr       */
+/*   Updated: 2024/03/17 19:18:55 by balberga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_putstr_fd(char *s, int fd)
 {
-	if (!s)
+	if (s == 0)
 		return ;
 	while (*s)
 	{

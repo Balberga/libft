@@ -6,7 +6,7 @@
 /*   By: balberga <balberga@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/16 19:12:26 by balberga          #+#    #+#             */
-/*   Updated: 2024/03/16 19:13:10 by balberga         ###   ########.fr       */
+/*   Updated: 2024/03/17 19:27:48 by balberga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,12 @@
 
 char	*ft_strchr(const char *s, int c)
 {
-	unsigned char	uc;
+	unsigned char	a;
 
-	uc = c;
-	while (*s && uc != *s)
+	a = c;
+	while (*s && a != *s)
 		s++;
-	if (!(*s) && uc)
+	if (!(*s) && a)
 		return (0);
 	return ((char *)s);
 }

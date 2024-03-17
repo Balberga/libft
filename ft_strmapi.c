@@ -6,7 +6,7 @@
 /*   By: balberga <balberga@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/17 18:00:09 by balberga          #+#    #+#             */
-/*   Updated: 2024/03/17 18:00:12 by balberga         ###   ########.fr       */
+/*   Updated: 2024/03/17 19:35:49 by balberga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,22 +14,22 @@
 
 char	*ft_strmapi(char const *s, char (*f) (unsigned int, char))
 {
-	char			*str;
-	unsigned int	i;
-	size_t			len;
+	char			*string;
+	unsigned int	a;
+	size_t			l;
 
 	if (!s || !f)
 		return (0);
-	i = 0;
-	len = ft_strlen(s);
-	str = (char *)malloc(len + 1);
-	if (!str)
+	a = 0;
+	l = ft_strlen(s);
+	string = (char *)malloc(l + 1);
+	if (!string)
 		return (0);
-	while (i < len)
+	while (a < l)
 	{
-		str[i] = f(i, s[i]);
-		i++;
+		string[a] = f(a, s[a]);
+		a++;
 	}
-	str[i] = 0;
-	return (str);
+	string[a] = 0;
+	return (string);
 }

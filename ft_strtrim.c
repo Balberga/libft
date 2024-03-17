@@ -6,7 +6,7 @@
 /*   By: balberga <balberga@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/17 18:00:56 by balberga          #+#    #+#             */
-/*   Updated: 2024/03/17 18:00:57 by balberga         ###   ########.fr       */
+/*   Updated: 2024/03/17 19:41:35 by balberga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,23 +14,23 @@
 
 char	*ft_strtrim(char const *s1, char const *set)
 {
-	int		startstr;
-	int		endstr;
-	char	*str;
+	int		start;
+	int		end;
+	char	*string;
 
 	if (!s1 || !set)
 		return (0);
-	startstr = 0;
-	endstr = ft_strlen(s1) - 1;
-	while (ft_strchr(set, s1[startstr]) && startstr <= endstr)
-		startstr++;
-	if (startstr > endstr)
+	start = 0;
+	end = ft_strlen(s1) - 1;
+	while (ft_strchr(set, s1[start]) && start <= end)
+		start++;
+	if (start > end)
 		return (ft_strdup(""));
-	while (ft_strchr(set, s1[endstr]) && endstr >= 0)
-		endstr--;
-	str = (char *)malloc(sizeof(char) * (endstr - startstr + 2));
-	if (!str)
+	while (ft_strchr(set, s1[end]) && end >= 0)
+		end--;
+	string = (char *)malloc(sizeof(char) * (end - start + 2));
+	if (!string)
 		return (0);
-	ft_strlcpy(str, s1 + startstr, endstr - startstr + 2);
-	return (str);
+	ft_strlcpy(string, s1 + start, end - start + 2);
+	return (string);
 }

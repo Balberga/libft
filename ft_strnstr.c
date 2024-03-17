@@ -5,34 +5,35 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: balberga <balberga@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/03/16 19:18:09 by balberga          #+#    #+#             */
-/*   Updated: 2024/03/17 16:15:44 by ebellini         ###   ########.fr       */
+/*   Created: 2024/03/17 19:36:25 by balberga          #+#    #+#             */
+/*   Updated: 2024/03/17 19:45:35 by balberga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 char	*ft_strnstr(const char *haystack, const char *needle, size_t n)
 {
-	size_t	i;
-	size_t	j;
-	char	*result;
+	size_t	a;
+	size_t	b;
+	char	*res;
 
-	i = 0;
+	a = 0;
 	if (!(*needle))
 		return ((char *)haystack);
-	while (i < n && haystack[i])
+	while (a < n && haystack[a])
 	{
-		if (haystack[i] == needle[0])
+		if (haystack[a] == needle[0])
 		{
-			j = 1;
-			result = &((char *)haystack)[i];
-			while (needle[j] && haystack[j + i] && j + i < n
-				&& needle[j] == haystack[j + i])
-				j++;
-			if (!needle[j])
-				return (result);
+			b = 1;
+			res = &((char *)haystack)[a];
+			while (needle[b] && haystack[b + a] && b + a < n
+				&& needle[b] == haystack[b + a])
+				b++;
+			if (!needle[b])
+				return (res);
 		}
-		i++;
+		a++;
 	}
 	return (0);
 }

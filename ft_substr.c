@@ -6,7 +6,7 @@
 /*   By: balberga <balberga@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/17 18:01:09 by balberga          #+#    #+#             */
-/*   Updated: 2024/03/17 18:01:10 by balberga         ###   ########.fr       */
+/*   Updated: 2024/03/17 19:43:41 by balberga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,27 +14,27 @@
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
-	char			*str;
-	unsigned int	i;
-	unsigned int	slength;
+	char			*string;
+	unsigned int	a;
+	unsigned int	l;
 
-	i = 0;
+	a = 0;
 	if (!s)
 		return (0);
-	slength = ft_strlen(s);
-	if (start >= slength)
-		str = ft_strdup("");
-	else if (len <= slength - start)
-		str = (char *)malloc(sizeof(char) * (len + 1));
+	l = ft_strlen(s);
+	if (start >= l)
+		string = ft_strdup("");
+	else if (len <= l - start)
+		string = (char *)malloc(sizeof(char) * (len + 1));
 	else
-		str = (char *)malloc(sizeof(char) * (slength - start + 1));
-	if (!str)
+		string = (char *)malloc(sizeof(char) * (l - start + 1));
+	if (!string)
 		return (0);
-	while (i < len && (i + start) < slength)
+	while (a < len && (a + start) < l)
 	{
-		str[i] = s[i + start];
-		i++;
+		string[a] = s[a + start];
+		a++;
 	}
-	str[i] = '\0';
-	return (str);
+	string[a] = '\0';
+	return (string);
 }

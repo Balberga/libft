@@ -6,7 +6,7 @@
 /*   By: balberga <balberga@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/16 19:19:13 by balberga          #+#    #+#             */
-/*   Updated: 2024/03/16 19:19:38 by balberga         ###   ########.fr       */
+/*   Updated: 2024/03/17 18:44:35 by balberga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,28 +14,28 @@
 
 int	ft_atoi(const char *nptr)
 {
-	int	i;
-	int	result;
-	int	sign;
+	int	a;
+	int	number;
+	int	symbol;
 
-	result = 0;
-	sign = 1;
-	i = 0;
-	while ((nptr[i] > 8 && nptr[i] < 14) || nptr[i] == 32)
-		i++;
-	if (nptr[i] == '+')
-		i++;
-	else if (nptr[i] == '-')
+	number = 0;
+	symbol = 1;
+	a = 0;
+	while ((nptr[a] >= '\t' && nptr[a] <= '\r') || nptr[a] == ' ')
+		a++;
+	if (nptr[a] == '+')
+		a++;
+	else if (nptr[a] == '-')
 	{
-		sign = -1;
-		i++;
+		symbol = -1;
+		a++;
 	}
-	if (nptr[i] < '0' || nptr[i] > '9')
+	if (nptr[a] < '0' || nptr[a] > '9')
 		return (0);
-	while (nptr[i] >= '0' && nptr[i] <= '9')
+	while (nptr[a] >= '0' && nptr[a] <= '9')
 	{
-		result *= 10;
-		result += (int)(nptr[i++] - 48);
+		number *= 10;
+		number += (int)(nptr[a++] - '0');
 	}
-	return (result * sign);
+	return (number * symbol);
 }

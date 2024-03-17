@@ -6,7 +6,7 @@
 /*   By: balberga <balberga@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/16 19:08:50 by balberga          #+#    #+#             */
-/*   Updated: 2024/03/16 19:09:27 by balberga         ###   ########.fr       */
+/*   Updated: 2024/03/17 19:33:19 by balberga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,26 +14,26 @@
 
 size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
-	size_t	dstlen;
-	size_t	i;
-	size_t	srclen;
+	size_t	dstl;
+	size_t	a;
+	size_t	srcl;
 
-	i = 0;
+	a = 0;
 	if (size == 0)
 	{
-		srclen = ft_strlen(src);
-		return (srclen);
+		srcl = ft_strlen(src);
+		return (srcl);
 	}
-	srclen = ft_strlen(src);
-	dstlen = ft_strlen(dst);
-	while ((i + dstlen) < (size - 1) && src[i])
+	srcl = ft_strlen(src);
+	dstl = ft_strlen(dst);
+	while ((a + dstl) < (size - 1) && src[a])
 	{
-		dst[dstlen + i] = src[i];
-		i++;
+		dst[dstl + a] = src[a];
+		a++;
 	}
-	if (dstlen < size)
-		dst[dstlen + i] = '\0';
+	if (dstl < size)
+		dst[dstl + a] = '\0';
 	else
-		return (srclen + size);
-	return (dstlen + srclen);
+		return (srcl + size);
+	return (dstl + srcl);
 }

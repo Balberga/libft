@@ -5,10 +5,11 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: balberga <balberga@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/02/08 01:29:41 by balberga          #+#    #+#             */
-/*   Updated: 2024/03/17 16:28:44 by ebellini         ###   ########.fr       */
+/*   Created: 2024/03/17 19:34:46 by balberga          #+#    #+#             */
+/*   Updated: 2024/03/17 19:34:52 by balberga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 size_t	ft_strlen(const char *s)

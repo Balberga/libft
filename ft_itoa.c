@@ -6,52 +6,52 @@
 /*   By: balberga <balberga@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/17 17:56:30 by balberga          #+#    #+#             */
-/*   Updated: 2024/03/17 17:56:33 by balberga         ###   ########.fr       */
+/*   Updated: 2024/03/17 19:11:26 by balberga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static char	*ft_createnum(char *str, long n, size_t len, int sign)
+static char	*ft_number(char *s, long num, size_t i, int symbol)
 {
-	unsigned char	c;
+	unsigned char	a;
 
-	str[len + sign] = 0;
-	if (sign)
-		str[0] = '-';
-	while (len-- > 0)
+	s[i + symbol] = 0;
+	if (symbol)
+		s[0] = '-';
+	while (i-- > 0)
 	{
-		c = 48 + (n % 10);
-		str[len + sign] = c;
-		n /= 10;
+		a = 48 + (num % 10);
+		s[i + symbol] = a;
+		num /= 10;
 	}
-	return (str);
+	return (s);
 }
 
 char	*ft_itoa(int n)
 {
-	char	*str;
-	size_t	count;
+	char	*s;
+	size_t	i;
 	long	num;
-	int		sign;
+	int		symbol;
 
-	sign = 0;
+	symbol = 0;
 	num = (long)n;
-	count = 0;
+	i = 0;
 	if (n < 0)
 	{
-		sign = 1;
+		symbol = 1;
 		num *= -1;
 	}
 	while (n / 10 != 0)
 	{
 		n /= 10;
-		count++;
+		i++;
 	}
-	count++;
-	str = (char *)malloc(count + sign + 1);
-	if (!str)
+	i++;
+	s = (char *)malloc(i + symbol + 1);
+	if (!s)
 		return (0);
-	str = ft_createnum(str, num, count, sign);
-	return (str);
+	s = ft_number(s, num, i, symbol);
+	return (s);
 }
