@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ebellini <ebellini@student.42roma.it>      +#+  +:+       +#+        */
+/*   By: balberga <balberga@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/01/29 20:09:52 by ebellini          #+#    #+#             */
-/*   Updated: 2024/01/31 15:15:55 by ebellini         ###   ########.fr       */
+/*   Created: 2024/03/17 18:00:09 by balberga          #+#    #+#             */
+/*   Updated: 2024/03/17 18:00:12 by balberga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

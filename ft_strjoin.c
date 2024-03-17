@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ebellini <ebellini@student.42roma.it>      +#+  +:+       +#+        */
+/*   By: balberga <balberga@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/01/28 17:33:35 by ebellini          #+#    #+#             */
-/*   Updated: 2024/01/28 19:44:53 by ebellini         ###   ########.fr       */
+/*   Created: 2024/03/17 17:59:30 by balberga          #+#    #+#             */
+/*   Updated: 2024/03/17 17:59:31 by balberga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_striteri.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ebellini <ebellini@student.42roma.it>      +#+  +:+       +#+        */
+/*   By: balberga <balberga@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/01/29 22:15:21 by ebellini          #+#    #+#             */
-/*   Updated: 2024/01/29 22:24:42 by ebellini         ###   ########.fr       */
+/*   Created: 2024/03/17 17:59:13 by balberga          #+#    #+#             */
+/*   Updated: 2024/03/17 17:59:16 by balberga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

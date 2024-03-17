@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ebellini <ebellini@student.42roma.it>      +#+  +:+       +#+        */
+/*   By: balberga <balberga@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/01/28 19:34:06 by ebellini          #+#    #+#             */
-/*   Updated: 2024/01/28 21:54:04 by ebellini         ###   ########.fr       */
+/*   Created: 2024/03/17 18:00:56 by balberga          #+#    #+#             */
+/*   Updated: 2024/03/17 18:00:57 by balberga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ebellini <ebellini@student.42roma.it>      +#+  +:+       +#+        */
+/*   By: balberga <balberga@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/01/30 13:33:35 by ebellini          #+#    #+#             */
-/*   Updated: 2024/01/31 18:11:34 by ebellini         ###   ########.fr       */
+/*   Created: 2024/03/17 17:58:09 by balberga          #+#    #+#             */
+/*   Updated: 2024/03/17 17:58:11 by balberga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
