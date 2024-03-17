@@ -6,7 +6,7 @@
 /*   By: balberga <balberga@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/17 18:20:24 by balberga          #+#    #+#             */
-/*   Updated: 2024/03/17 18:20:26 by balberga         ###   ########.fr       */
+/*   Updated: 2024/03/17 20:21:57 by balberga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,15 +14,15 @@
 
 int	ft_lstsize(t_list *lst)
 {
-	int		count;
+	int		a;
 
 	if (!lst)
 		return (0);
-	count = 1;
+	a = 1;
 	while (lst->next)
 	{
 		lst = lst->next;
-		count++;
+		a++;
 	}
-	return (count);
+	return (a);
 }

@@ -6,7 +6,7 @@
 /*   By: balberga <balberga@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/17 18:20:02 by balberga          #+#    #+#             */
-/*   Updated: 2024/03/17 18:20:04 by balberga         ###   ########.fr       */
+/*   Updated: 2024/03/17 20:21:12 by balberga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,12 @@
 
 t_list	*ft_lstnew(void *content)
 {
-	t_list	*lst;
+	t_list	*l;
 
-	lst = malloc(sizeof(t_list));
-	if (!lst)
+	l = malloc(sizeof(t_list));
+	if (!l)
 		return (0);
-	lst->content = content;
-	lst->next = 0;
-	return (lst);
+	l->content = content;
+	l->next = 0;
+	return (l);
 }
