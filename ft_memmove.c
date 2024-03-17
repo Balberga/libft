@@ -6,7 +6,7 @@
 /*   By: balberga <balberga@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/14 16:17:23 by balberga          #+#    #+#             */
-/*   Updated: 2024/03/16 19:07:54 by balberga         ###   ########.fr       */
+/*   Updated: 2024/03/17 16:35:30 by ebellini         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,17 +14,17 @@
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {
-	size_t	i;
+	size_t	a;
 
-	i = 0;
+	a = 0;
 	if (!dest && !src)
 		return (0);
 	if (src >= dest)
 	{
-		while (i < n)
+		while (a < n)
 		{
-			((unsigned char *)dest)[i] = ((unsigned char *)src)[i];
-			i++;
+			((unsigned char *)dest)[a] = ((unsigned char *)src)[a];
+			a++;
 		}
 	}
 	else

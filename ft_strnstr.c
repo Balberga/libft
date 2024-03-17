@@ -6,9 +6,10 @@
 /*   By: balberga <balberga@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/16 19:18:09 by balberga          #+#    #+#             */
-/*   Updated: 2024/03/16 19:18:44 by balberga         ###   ########.fr       */
+/*   Updated: 2024/03/17 16:15:44 by ebellini         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+#include "libft.h"
 
 char	*ft_strnstr(const char *haystack, const char *needle, size_t n)
 {

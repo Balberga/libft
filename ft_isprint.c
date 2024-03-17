@@ -6,9 +6,10 @@
 /*   By: balberga <balberga@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/08 01:22:55 by balberga          #+#    #+#             */
-/*   Updated: 2024/02/08 01:48:38 by balberga         ###   ########.fr       */
+/*   Updated: 2024/03/17 16:27:12 by ebellini         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+#include "libft.h"
 
 int	ft_isprint(int c)
 {

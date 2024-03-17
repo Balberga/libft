@@ -6,9 +6,10 @@
 /*   By: balberga <balberga@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/08 00:17:02 by balberga          #+#    #+#             */
-/*   Updated: 2024/02/08 00:41:39 by balberga         ###   ########.fr       */
+/*   Updated: 2024/03/17 16:24:45 by ebellini         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+#include "libft.h"
 
 int	ft_isalpha(int c)
 {

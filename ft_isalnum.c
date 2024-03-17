@@ -6,10 +6,9 @@
 /*   By: balberga <balberga@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/07 20:16:29 by balberga          #+#    #+#             */
-/*   Updated: 2024/02/07 20:16:40 by balberga         ###   ########.fr       */
+/*   Updated: 2024/03/17 16:26:05 by ebellini         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 #include "libft.h"
 
 int	ft_isalnum(int c)
